@@ -37,22 +37,22 @@ Using thier API, I can access this data to dive into the numbers and see if ther
 
 | Variable                         | Description                                                  |Data types|
 | -------------------------------- | -----------------------------------------------------------  |----------|
-| actuals.cases                    | Cumulative confirmed or suspected cases. | int |
-| actuals.deaths                   | Cumulative deaths that are suspected or confirmed to have been caused by COVID-19. | int |
-| actuals.positiveTests.           | Cumulative positive test results to date| int |
-| actuals.negativeTests            | Cumulative negative test results to date| int |
-|actuals.contactTracers            | The number of people with whom a newly confirmed COVID patient has come into contact with. | int |
-|actuals.newCases.                 | New confirmed or suspected cases| int |
-|metrics.testPositivityRatio.      | Ratio of people who test positive calculated using a 7-day rolling average.| int |
-|metrics.caseDensity               | The number of cases per 100k population calculated using a 7-day rolling average.| int |
-|metrics.contactTracerCapacityRatio|
-|metrics.infectionRate             | R_t, or the estimated number of infections arising from a typical case| int |
-|metrics.infectionRateCI90         | 90th percentile confidence interval upper endpoint of the infection rate.| int |
-|riskLevels.overall                | Risk levels of catching Covid with level 5 for locations experiencing a severe outbreak | int |
-|actuals.newDeaths                 | Number of deaths that are suspected or confirmed to have been caused by COVID-19 that day.| int |
-|riskLevels.caseDensity            | Risk levels of catching Covid with level 5 for locations experiencing a severe outbreak | int |
-|cdcTransmissionLevel              | The calculated level or category using the CDC's thresholds | int |
-|metrics.weeklyNewCasesPer100k.    |
+| actuals.cases                    | Cumulative confirmed or suspected cases. | int64 |
+| actuals.deaths                   | Cumulative deaths that are suspected or confirmed to have been caused by COVID-19. | int64 |
+| actuals.positiveTests.           | Cumulative positive test results to date| float64 |
+| actuals.negativeTests            | Cumulative negative test results to date| float64 |
+|actuals.contactTracers            | The number of people with whom a newly confirmed COVID patient has come into contact with. | float64 |
+|actuals.newCases.                 | New confirmed or suspected cases| float64 |
+|metrics.testPositivityRatio.      | Ratio of people who test positive calculated using a 7-day rolling average.| float64 |
+|metrics.caseDensity               | The number of cases per 100k population calculated using a 7-day rolling average.| float64 |
+|metrics.contactTracerCapacityRatio| | float64 |
+|metrics.infectionRate             | R_t, or the estimated number of infections arising from a typical case| float64 |
+|metrics.infectionRateCI90         | 90th percentile confidence interval upper endpoint of the infection rate.| float64 |
+|riskLevels.overall                | Risk levels of catching Covid with level 5 for locations experiencing a severe outbreak | int64 |
+|actuals.newDeaths                 | Number of deaths that are suspected or confirmed to have been caused by COVID-19 that day.| float64 |
+|riskLevels.caseDensity            | Risk levels of catching Covid with level 5 for locations experiencing a severe outbreak | int64 |
+|cdcTransmissionLevel              | The calculated level or category using the CDC's thresholds | int64 |
+|metrics.weeklyNewCasesPer100k.    | | float64 |
 
                 
 
