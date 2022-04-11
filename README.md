@@ -30,14 +30,29 @@ Using thier API, I can access this data to dive into the numbers and see if ther
 
 - Wrangle
     - Register for an API key [here](https://apidocs.covidactnow.org/).
-    - Acquire data from [Covid Act Now](https://covidactnow.org/?s=30651923) using the API key and save a CSV file to local drive.
+    - Acquire data from [Covid Act Now](https://apidocs.covidactnow.org/#register) using the API key and save a CSV file to local drive.
 
 
 ## Data Dictionary
 
-| Variable          | Description                                                  |Data types|
-| ----------------- | -----------------------------------------------------------  |----------|
-| name         | blah blah blah |   str        |
+| Variable                         | Description                                                  |Data types|
+| -------------------------------- | -----------------------------------------------------------  |----------|
+| actuals.cases                    | Cumulative confirmed or suspected cases. | int |
+| actuals.deaths                   | Cumulative deaths that are suspected or confirmed to have been caused by COVID-19. | int |
+| actuals.positiveTests.           | Cumulative positive test results to date| int |
+| actuals.negativeTests            | Cumulative negative test results to date| int |
+|actuals.contactTracers            | The number of people with whom a newly confirmed COVID patient has come into contact with. | int |
+|actuals.newCases.                 | New confirmed or suspected cases| int |
+|metrics.testPositivityRatio.      | Ratio of people who test positive calculated using a 7-day rolling average.| int |
+|metrics.caseDensity               | The number of cases per 100k population calculated using a 7-day rolling average.| int |
+|metrics.contactTracerCapacityRatio|
+|metrics.infectionRate             | R_t, or the estimated number of infections arising from a typical case| int |
+|metrics.infectionRateCI90         | 90th percentile confidence interval upper endpoint of the infection rate.| int |
+|riskLevels.overall                | Risk levels of catching Covid with level 5 for locations experiencing a severe outbreak | int |
+|actuals.newDeaths                 | Number of deaths that are suspected or confirmed to have been caused by COVID-19 that day.| int |
+|riskLevels.caseDensity            | Risk levels of catching Covid with level 5 for locations experiencing a severe outbreak | int |
+|cdcTransmissionLevel              | The calculated level or category using the CDC's thresholds | int |
+|metrics.weeklyNewCasesPer100k.    |
 
                 
 
